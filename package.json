@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./css/style.css -o ./css/tailwind.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
