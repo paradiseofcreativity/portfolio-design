@@ -13,3 +13,23 @@ updateList();
 window.addEventListener('scroll', () => {
     updateList();
 })
+
+// mobile navigation 
+
+const menu = document.getElementById('menu');
+const menuClose = document.getElementById('menu-close');
+const nav = document.getElementById('mobile-nav');
+
+menu.addEventListener('click', (e) => {
+	e.preventDefault();
+	nav.classList.remove('hidden');
+	menu.classList.add('hidden');
+	menuClose.classList.remove('hidden');
+});
+
+menuClose.addEventListener('click', (e) => {
+	e.preventDefault();
+	nav.classList.add('hidden');
+	menu.classList.remove('hidden');
+	menuClose.classList.add('hidden');
+});
